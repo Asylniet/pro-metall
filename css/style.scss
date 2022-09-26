@@ -114,6 +114,13 @@ header {
   .hamburger {
     display: none;
   }
+  a {
+    color: var(--clr-dark-700);
+    transition: 0.2s ease;
+    &:hover {
+      color: var(--clr-primary-700);
+    }
+  }
 }
 
 nav {

@@ -57,10 +57,10 @@ class Header extends HTMLElement {
           <a href="tel:+77057899485" class="fw-bold fs-500 call-link clr-dark"> +7 705 789 94 85 </a>
           <a href="#" class="clr-primary order-call">Заказать звонок</a>
         </div>
-        <div class="address fs-500 fw-bold">
+        <a href="https://go.2gis.com/o2b05" target="_blank" class="address fs-500 fw-bold">
           г. Тараз, <br />
           ул. Мамбет Батыра, 15
-        </div>
+        </a>
         <div class="hamburger">
           <span></span>
           <span></span>

@@ -203,7 +203,7 @@ class Footer extends HTMLElement {
         <div class="flex g20 start pos-rel" data-aos="fade-up"
         data-aos-delay="150">
           <img src="/assets/icons/location.svg" alt="" class="tel" />
-          <a href=""
+          <a href="https://go.2gis.com/o2b05" target="_blank"
             >г. Тараз, <br />
             ул. Мамбет Батыра, 15</a
           >
@@ -219,10 +219,10 @@ class Footer extends HTMLElement {
       </div>
       <div class="flex column start g20 links clr-neutral" data-aos="fade-up"
       data-aos-delay="250">
-        <a href="#">Главная</a>
-        <a href="#">О компании</a>
-        <a href="#">Продукция</a>
-        <a href="#">Контакты</a>
+        <a href="/index.html">Главная</a>
+        <a href="/pages/about.html">О компании</a>
+        <a href="/pages/products.html">Продукция</a>
+        <a href="/pages/contacts.html">Контакты</a>
       </div>
     </div>
   </div>

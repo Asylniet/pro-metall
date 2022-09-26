@@ -256,6 +256,13 @@ header .header-main {
 header .hamburger {
   display: none;
 }
+header a {
+  color: var(--clr-dark-700);
+  transition: 0.2s ease;
+}
+header a:hover {
+  color: var(--clr-primary-700);
+}
 
 nav {
   display: flex;
