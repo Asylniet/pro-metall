@@ -57,13 +57,32 @@ section.main.flex {
 .main-content {
     flex: 2;
     max-width: 850px;
-    gap: 2.5rem;
-    img {
-        width: 100%;
-        object-fit: cover;
+    position: relative;
+    strong {
+      font-weight: var(--fw-bold);
     }
-    .title {
-        line-height: 64px;
+    .tab {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      transform: scale(0.9);
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        position: static;
+      }
+      gap: 2.5rem;
+      img {
+          width: 100%;
+          object-fit: cover;
+      }
+      .title {
+          line-height: 64px;
+      }
     }
 }
 
@@ -93,7 +112,7 @@ section.main.flex {
         padding: 0;
         @include flex();
     }
-    .main-content.flex.start {
+    .main-content .tab.flex.start {
         align-items: center;
     }
     section.main.flex {

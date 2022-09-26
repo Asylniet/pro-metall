@@ -200,14 +200,33 @@ section.main.flex {
 .main-content {
   flex: 2;
   max-width: 850px;
+  position: relative;
+}
+.main-content strong {
+  font-weight: var(--fw-bold);
+}
+.main-content .tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  transform: scale(0.9);
   gap: 2.5rem;
 }
-.main-content img {
+.main-content .tab.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  position: static;
+}
+.main-content .tab img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main-content .title {
+.main-content .tab .title {
   line-height: 64px;
 }
 
@@ -240,7 +259,7 @@ section.main.flex {
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .main-content.flex.start {
+  .main-content .tab.flex.start {
     align-items: center;
   }
   section.main.flex {

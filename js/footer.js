@@ -7,23 +7,26 @@ class Footer extends HTMLElement {
     this.innerHTML = `
     <section class="aboutUs">
     <div class="aboutUs-wrapper container flex column start">
-      <div class="fs-600 fw-bold clr-accent title">О компании</div>
+      <div class="fs-600 fw-bold clr-accent title" data-aos="fade-up">О компании</div>
       <div class="flex start wrap">
-        <div class="statisticBlock">
+        <div class="statisticBlock" data-aos="fade-up"
+        data-aos-delay="100">
           <div class="number">12</div>
           <div class="descr">
             лет <br />
             на рынке
           </div>
         </div>
-        <div class="statisticBlock">
+        <div class="statisticBlock" data-aos="fade-up"
+        data-aos-delay="150">
           <div class="number">700+</div>
           <div class="descr">
             довольных <br />
             клиентов
           </div>
         </div>
-        <div class="statisticBlock">
+        <div class="statisticBlock" data-aos="fade-up"
+        data-aos-delay="200">
           <div class="number">150+</div>
           <div class="descr">
             наименований <br />
@@ -31,7 +34,8 @@ class Footer extends HTMLElement {
           </div>
         </div>
       </div>
-      <div class="aboutUs-descr ff-inter">
+      <div class="aboutUs-descr ff-inter" data-aos="fade-up"
+      data-aos-delay="100">
         ТОО «Тараз металл инвест» представляет широкий ассортимент
         металлопродукции: арматура, круг стальной, катанка, прокат листовой
         – горячекатаный, холоднокатаный, рифленый, просечно-вытяжной, трубы
@@ -44,12 +48,14 @@ class Footer extends HTMLElement {
     </div>
   </section>
   <section class="profit container flex column">
-    <div class="title fs-700 fw-bold clr-neutral center">
+    <div class="title fs-700 fw-bold clr-neutral center" data-aos="fade-up"
+    data-aos-delay="100">
       Почему работать с нами - выгодно?
     </div>
     <div class="flex column g20">
       <div class="flex wrap profit-row">
-        <div class="profit-block flex start g10">
+        <div class="profit-block flex start g10" data-aos="fade-up"
+        data-aos-delay="150">
           <img src="/assets/images/profit/profit 1.svg" alt="" />
           <div class="flex column start">
             <div class="profit-title">Высокое качество</div>
@@ -59,7 +65,8 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="profit-block flex start g10">
+        <div class="profit-block flex start g10" data-aos="fade-up"
+        data-aos-delay="200">
           <img src="/assets/images/profit/profit 2.svg" alt="" />
           <div class="flex column start">
             <div class="profit-title">Широкий ассортимент</div>
@@ -69,7 +76,8 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="profit-block flex start g10">
+        <div class="profit-block flex start g10" data-aos="fade-up"
+        data-aos-delay="250">
           <img src="/assets/images/profit/profit 3.svg" alt="" />
           <div class="flex column start">
             <div class="profit-title">Честная торговля</div>
@@ -82,7 +90,8 @@ class Footer extends HTMLElement {
       </div>
 
       <div class="flex wrap profit-row">
-        <div class="profit-block flex start g10">
+        <div class="profit-block flex start g10" data-aos="fade-up"
+        data-aos-delay="300">
           <img src="/assets/images/profit/profit 4.svg" alt="" />
           <div class="flex column start">
             <div class="profit-title">Точность сроков</div>
@@ -93,7 +102,8 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="profit-block flex start g10">
+        <div class="profit-block flex start g10" data-aos="fade-up"
+        data-aos-delay="350">
           <img src="/assets/images/profit/profit 5.svg" alt="" />
           <div class="flex column start">
             <div class="profit-title">Партнерство</div>
@@ -109,16 +119,20 @@ class Footer extends HTMLElement {
   <section class="partners container flex column">
     <div class="title fs-700 fw-bold center">Наши партнеры</div>
     <div class="flex wrap">
-      <div class="partner">
+      <div class="partner" data-aos="fade-up"
+      data-aos-delay="100">
         <img src="/assets/images/partners/partner-1.jpg" alt="" />
       </div>
-      <div class="partner">
+      <div class="partner" data-aos="fade-up"
+      data-aos-delay="150">
         <img src="/assets/images/partners/partner-2.jpg" alt="" />
       </div>
-      <div class="partner">
+      <div class="partner" data-aos="fade-up"
+      data-aos-delay="200">
         <img src="/assets/images/partners/partner-3.jpg" alt="" />
       </div>
-      <div class="partner" id="askQuestion">
+      <div class="partner" id="askQuestion" data-aos="fade-up"
+      data-aos-delay="250">
         <img src="/assets/images/partners/partner-4.jpg" alt="" />
       </div>
     </div>
@@ -126,12 +140,14 @@ class Footer extends HTMLElement {
   <section class="question container">
     <div class="flex wrap question-flex">
       <div class="flex column question-part">
-        <div class="title fs-700 fw-bold center">Задать вопрос</div>
-        <div class="ff-inter center fs-18">
+        <div class="title fs-700 fw-bold center" data-aos="fade-up">Задать вопрос</div>
+        <div class="ff-inter center fs-18" data-aos="fade-up"
+        data-aos-delay="50">
           Заполните форму и наши специалисты свяжутся с вами в ближайшее
           время
         </div>
-        <form action="#" class="flex column g10">
+        <form action="#" class="flex column g10" data-aos="fade-up"
+        data-aos-delay="100">
           <input type="text" placeholder="Ваше имя" />
           <input type="tel" placeholder="Ваше телефон" />
           <textarea placeholder="Сообщение"></textarea>
@@ -139,14 +155,16 @@ class Footer extends HTMLElement {
         </form>
       </div>
 
-      <div class="flex column kaspi">
+      <div class="flex column kaspi" data-aos="fade-up"
+      data-aos-delay="150">
         <div class="title fs-700 fw-bold center">Kaspi QR</div>
         <div class="fw-bold fs-500">Сканируйте и платите</div>
         <img src="/assets/images/kaspi.jpg" alt="Kaspi QR" />
       </div>
     </div>
   </section>
-  <section class="container toStart">
+  <section class="container toStart" data-aos="fade-up"
+  data-aos-delay="100">
     <a href="#top" class="circle">
       <svg
         width="18"
@@ -171,7 +189,8 @@ class Footer extends HTMLElement {
 <footer class="flex start">
   <div class="container">
     <div class="footer-wrapper flex wrap">
-      <div class="phones flex start g20 pos-rel">
+      <div class="phones flex start g20 pos-rel" data-aos="fade-up"
+      data-aos-delay="100">
         <img src="/assets/icons/call.svg" alt="" class="tel" />
         <div class="flex column g10 start">
           <a href="tel:+77057899485">+7 705 789 94 85</a>
@@ -181,14 +200,16 @@ class Footer extends HTMLElement {
         </div>
       </div>
       <div class="footer-mid flex column start">
-        <div class="flex g20 start pos-rel">
+        <div class="flex g20 start pos-rel" data-aos="fade-up"
+        data-aos-delay="150">
           <img src="/assets/icons/location.svg" alt="" class="tel" />
           <a href=""
             >г. Тараз, <br />
             ул. Мамбет Батыра, 15</a
           >
         </div>
-        <div class="flex column social g10">
+        <div class="flex column social g10" data-aos="fade-up"
+        data-aos-delay="200">
           <span class="fs-18">Наши соцсети</span>
           <div class="flex start">
             <img src="/assets/icons/facebook.svg" alt="" />
@@ -196,7 +217,8 @@ class Footer extends HTMLElement {
           </div>
         </div>
       </div>
-      <div class="flex column start g20 links clr-neutral">
+      <div class="flex column start g20 links clr-neutral" data-aos="fade-up"
+      data-aos-delay="250">
         <a href="#">Главная</a>
         <a href="#">О компании</a>
         <a href="#">Продукция</a>

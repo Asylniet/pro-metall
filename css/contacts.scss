@@ -1,0 +1,32 @@
+@import "variables";
+
+.contacts {
+    font-size: 18px;
+    padding: 2.5rem 5rem 9.375rem;
+    .title {
+        margin-bottom: 6.25rem; 
+    }
+    a {
+        color: var(--clr-dark-700);
+        transition: 0.2s ease;
+        &:hover {
+            color: var(--clr-primary-700);
+        }
+    }
+    .side-img {
+        width: clamp(300px, 100%, 840px);
+        height: 500px;
+        object-fit: cover;
+    }
+    .contact-holder {
+        gap: 50px;
+        min-width: 300px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contacts {
+        padding: 1.5rem 1rem 6rem;
+    }
+}

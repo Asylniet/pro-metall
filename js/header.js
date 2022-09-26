@@ -80,7 +80,7 @@ class Header extends HTMLElement {
           pathname == "products" && "selected"
         }">Продукция</a>
         <a href="/pages/contacts.html" class="nav-option ${
-          pathname == "pages" && "selected"
+          pathname == "contacts" && "selected"
         }">Контакты</a>
       </div>
     </nav>
