@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sen:wght@400;700&display=swap");
+:root {
+  --clr-primary-700: #ff6b00;
+  --clr-primary-600: #ffa260;
+  --clr-accent-700: #22407a;
+  --clr-neutral-1000: #ffffff;
+  --clr-neutral-900: #f4f0f8;
+  --clr-neutral-700: #d9d9d9;
+  --clr-dark-700: #252525;
+  --ff-primary: "Sen", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
+  --ff-body: var(--ff-primary);
+  --fw-regular: 400;
+  --fw-half-medium: 500;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --fs-700: 3.5rem;
+  --fs-600: 3rem;
+  --fs-550: 2.25rem;
+  --fs-500: 1.5rem;
+  --fs-200: 1.125rem;
+  --fs-100: 1rem;
+  --fs-50: 0.625;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex.start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex.spb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.g10 {
+  gap: 10px;
+}
+
+.g20 {
+  gap: 20px;
+}
+
+.mv10 {
+  margin: 10px 0;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.center {
+  text-align: center;
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-half-medium {
+  font-weight: var(--fw-half-medium);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.clr-primary {
+  color: var(--clr-primary-700);
+}
+
+.clr-neutral {
+  color: var(--clr-neutral-1000);
+}
+
+.clr-accent {
+  color: var(--clr-accent-700);
+}
+
+.clr-dark {
+  color: var(--clr-dark-700);
+}
+
+.ff-inter {
+  font-family: var(--ff-secondary);
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.products {
+  padding: 100px 0;
+}
+.products .title {
+  margin-bottom: 60px;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.3rem, 1fr));
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  grid-auto-rows: 1fr;
+  row-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+.product img {
+  margin-bottom: 20px;
+  height: 9.375rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero {
+  width: 100%;
+  height: 520px;
+  position: relative;
+  background: var(--clr-neutral-900);
+}
+
+.mainPage.swiper {
+  width: clamp(300px, 100%, 1440px);
+  height: 100%;
+}
+.mainPage.swiper .swiper-slide {
+  position: relative;
+}
+.mainPage.swiper .swiper-slide::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+.mainPage.swiper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.mainPage.swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 1.875rem;
+  transform: translate(50%, -50%);
+}
+.mainPage.swiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 1.875rem;
+  transform: translate(-50%, -50%);
+}
+.mainPage.swiper .swiper-button-next path,
+.mainPage.swiper .swiper-button-prev path {
+  transition: 0.2s ease;
+}
+.mainPage.swiper .swiper-button-next:hover path,
+.mainPage.swiper .swiper-button-prev:hover path {
+  fill: var(--clr-primary-700);
+}
+.mainPage.swiper .swiper-pagination-bullet {
+  background: var(--clr-neutral-1000);
+  opacity: 1;
+}
+.mainPage.swiper .swiper-pagination-bullet-active {
+  background: var(--clr-primary-700);
+}
+
+.hero-part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+.hero-part .title {
+  line-height: 4.5rem;
+  margin-bottom: 1.25rem;
+  /* or 129% */
+  letter-spacing: -0.125rem;
+}/*# sourceMappingURL=mainPage.css.map */
