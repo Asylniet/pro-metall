@@ -337,6 +337,14 @@ nav .nav-option:hover {
 .order-call:hover::before {
   transform: scaleX(1);
 }
+.call-link:hover,
+.order-call:hover {
+  color: var(--clr-dark-700);
+}
+
+.order-call:hover {
+  color: var(--clr-primary-700);
+}
 
 .order-call::before {
   background: var(--clr-primary-700);

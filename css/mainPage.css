@@ -247,4 +247,13 @@
   margin-bottom: 1.25rem;
   /* or 129% */
   letter-spacing: -0.125rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    height: 300px;
+  }
+  .button {
+    font-size: 1.6rem;
+  }
 }/*# sourceMappingURL=mainPage.css.map */

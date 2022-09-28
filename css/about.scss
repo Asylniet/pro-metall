@@ -6,6 +6,8 @@
   position: relative;
   min-height: 260px;
   max-height: none;
+  background-repeat: no-repeat;
+  background-size: cover;
   &::before {
     content: "";
     position: absolute;

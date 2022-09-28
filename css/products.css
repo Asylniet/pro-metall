@@ -141,10 +141,12 @@
 
 .hero-about {
   padding: 5rem 0 7.5rem;
-  background: url("/assets/images/about-bg.jpg");
+  background: url("/assets/images/products-bg.jpg");
   position: relative;
   min-height: 260px;
   max-height: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-about::before {
   content: "";
