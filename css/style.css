@@ -156,19 +156,16 @@ ol[role=list] {
   list-style: none;
 }
 
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 html {
+  width: 100vw;
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
 body {
   font-family: var(--ff-body);
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -806,6 +803,18 @@ footer .links a {
   }
   .preFooter img {
     height: 5rem;
+  }
+  .mainPage.swiper .swiper-slide img.secondImage {
+    position: relative;
+    top: -105px;
+    left: -537px;
+    transform: scale(0.6);
+  }
+  .mainPage.swiper .swiper-slide img.thirdImage {
+    position: relative;
+    top: -105px;
+    left: -100%;
+    transform: scale(0.6);
   }
   .destroyOn500 {
     display: none;

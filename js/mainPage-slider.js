@@ -7,9 +7,9 @@ const swiper = new Swiper(".mainPage.swiper", {
   fadeEffect: {
     crossFade: false
   },
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
 
   // If we need pagination
   pagination: {
